@@ -26,9 +26,15 @@ public class City
    }
 
   //Complete the toString() method
+  public String toString() {
+   return name + ", " + population;
+  }
 
 
 
   //Complete the equals() method
+  public boolean equals(Object obj) {
+   return name.equals(((City)obj).getName()) && population == ((City)obj).getPop();
+  }
   
 }
